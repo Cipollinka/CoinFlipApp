@@ -7,7 +7,7 @@ workflows:
       groups:
         - creds
       vars:
-        XCODE_WORKSPACE: "CoinFlipApp" # <----
+        XCODE_WORKSPACE: "CoinFlipApp.xcworkspace" # <----
         XCODE_SCHEME: "CoinFlipApp" # <----
         BUNDLE_ID: "com.coinflip.app" # <----
         APP_STORE_APP_ID: 6738723075 # <----
