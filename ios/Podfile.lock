@@ -1,4 +1,7 @@
 PODS:
+  - AppsFlyerFramework (6.15.3):
+    - AppsFlyerFramework/Main (= 6.15.3)
+  - AppsFlyerFramework/Main (6.15.3)
   - boost (1.84.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.76.2)
@@ -7,6 +10,52 @@ PODS:
   - hermes-engine (0.76.2):
     - hermes-engine/Pre-built (= 0.76.2)
   - hermes-engine/Pre-built (0.76.2)
+  - OneSignalXCFramework (5.2.9):
+    - OneSignalXCFramework/OneSignalComplete (= 5.2.9)
+  - OneSignalXCFramework/OneSignal (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalExtension
+    - OneSignalXCFramework/OneSignalLiveActivities
+    - OneSignalXCFramework/OneSignalNotifications
+    - OneSignalXCFramework/OneSignalOSCore
+    - OneSignalXCFramework/OneSignalOutcomes
+    - OneSignalXCFramework/OneSignalUser
+  - OneSignalXCFramework/OneSignalComplete (5.2.9):
+    - OneSignalXCFramework/OneSignal
+    - OneSignalXCFramework/OneSignalInAppMessages
+    - OneSignalXCFramework/OneSignalLocation
+  - OneSignalXCFramework/OneSignalCore (5.2.9)
+  - OneSignalXCFramework/OneSignalExtension (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalOutcomes
+  - OneSignalXCFramework/OneSignalInAppMessages (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalNotifications
+    - OneSignalXCFramework/OneSignalOSCore
+    - OneSignalXCFramework/OneSignalOutcomes
+    - OneSignalXCFramework/OneSignalUser
+  - OneSignalXCFramework/OneSignalLiveActivities (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalOSCore
+    - OneSignalXCFramework/OneSignalUser
+  - OneSignalXCFramework/OneSignalLocation (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalNotifications
+    - OneSignalXCFramework/OneSignalOSCore
+    - OneSignalXCFramework/OneSignalUser
+  - OneSignalXCFramework/OneSignalNotifications (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalExtension
+    - OneSignalXCFramework/OneSignalOutcomes
+  - OneSignalXCFramework/OneSignalOSCore (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+  - OneSignalXCFramework/OneSignalOutcomes (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+  - OneSignalXCFramework/OneSignalUser (5.2.9):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalNotifications
+    - OneSignalXCFramework/OneSignalOSCore
+    - OneSignalXCFramework/OneSignalOutcomes
   - RCT-Folly (2024.01.01.00):
     - boost
     - DoubleConversion
@@ -1242,7 +1291,15 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-safe-area-context (4.14.1):
+  - react-native-apple-ads-attribution (1.0.4):
+    - React-Core
+  - react-native-appsflyer (6.15.3):
+    - AppsFlyerFramework (= 6.15.3)
+    - React
+  - react-native-onesignal (5.2.8):
+    - OneSignalXCFramework (= 5.2.9)
+    - React (< 1.0.0, >= 0.13.0)
+  - react-native-safe-area-context (5.2.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1255,8 +1312,8 @@ PODS:
     - React-featureflags
     - React-graphics
     - React-ImageManager
-    - react-native-safe-area-context/common (= 4.14.1)
-    - react-native-safe-area-context/fabric (= 4.14.1)
+    - react-native-safe-area-context/common (= 5.2.0)
+    - react-native-safe-area-context/fabric (= 5.2.0)
     - React-NativeModulesApple
     - React-RCTFabric
     - React-rendererdebug
@@ -1265,7 +1322,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-safe-area-context/common (4.14.1):
+  - react-native-safe-area-context/common (5.2.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1286,7 +1343,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-safe-area-context/fabric (4.14.1):
+  - react-native-safe-area-context/fabric (5.2.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1300,6 +1357,29 @@ PODS:
     - React-graphics
     - React-ImageManager
     - react-native-safe-area-context/common
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - react-native-tracking-transparency (0.1.2):
+    - React
+  - react-native-webview (13.13.2):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
     - React-NativeModulesApple
     - React-RCTFabric
     - React-rendererdebug
@@ -1575,7 +1655,7 @@ PODS:
     - React-logger (= 0.76.2)
     - React-perflogger (= 0.76.2)
     - React-utils (= 0.76.2)
-  - RNCAsyncStorage (2.1.0):
+  - RNCAsyncStorage (2.1.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1596,9 +1676,9 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNDeviceInfo (14.0.2):
+  - RNDeviceInfo (14.0.4):
     - React-Core
-  - RNGestureHandler (2.21.2):
+  - RNGestureHandler (2.23.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1640,7 +1720,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNReanimated (3.16.5):
+  - RNReanimated (3.16.7):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1660,10 +1740,10 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNReanimated/reanimated (= 3.16.5)
-    - RNReanimated/worklets (= 3.16.5)
+    - RNReanimated/reanimated (= 3.16.7)
+    - RNReanimated/worklets (= 3.16.7)
     - Yoga
-  - RNReanimated/reanimated (3.16.5):
+  - RNReanimated/reanimated (3.16.7):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1683,30 +1763,9 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNReanimated/reanimated/apple (= 3.16.5)
+    - RNReanimated/reanimated/apple (= 3.16.7)
     - Yoga
-  - RNReanimated/reanimated/apple (3.16.5):
-    - DoubleConversion
-    - glog
-    - hermes-engine
-    - RCT-Folly (= 2024.01.01.00)
-    - RCTRequired
-    - RCTTypeSafety
-    - React-Core
-    - React-debug
-    - React-Fabric
-    - React-featureflags
-    - React-graphics
-    - React-ImageManager
-    - React-NativeModulesApple
-    - React-RCTFabric
-    - React-rendererdebug
-    - React-utils
-    - ReactCodegen
-    - ReactCommon/turbomodule/bridging
-    - ReactCommon/turbomodule/core
-    - Yoga
-  - RNReanimated/worklets (3.16.5):
+  - RNReanimated/reanimated/apple (3.16.7):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1727,7 +1786,28 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (4.3.0):
+  - RNReanimated/worklets (3.16.7):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNScreens (4.8.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1748,9 +1828,9 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNScreens/common (= 4.3.0)
+    - RNScreens/common (= 4.8.0)
     - Yoga
-  - RNScreens/common (4.3.0):
+  - RNScreens/common (4.8.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1777,7 +1857,7 @@ PODS:
     - RNSound/Core (= 0.11.2)
   - RNSound/Core (0.11.2):
     - React-Core
-  - RNSVG (15.10.1):
+  - RNSVG (15.11.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1797,9 +1877,9 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNSVG/common (= 15.10.1)
+    - RNSVG/common (= 15.11.1)
     - Yoga
-  - RNSVG/common (15.10.1):
+  - RNSVG/common (15.11.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1821,6 +1901,8 @@ PODS:
     - ReactCommon/turbomodule/core
     - Yoga
   - SocketRocket (0.7.1)
+  - sparkfabrik-react-native-idfa-aaid (1.2.0):
+    - React
   - Yoga (0.0.0)
 
 DEPENDENCIES:
@@ -1861,7 +1943,12 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
+  - "react-native-apple-ads-attribution (from `../node_modules/@vladikstyle/react-native-apple-ads-attribution`)"
+  - react-native-appsflyer (from `../node_modules/react-native-appsflyer`)
+  - react-native-onesignal (from `../node_modules/react-native-onesignal`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - react-native-tracking-transparency (from `../node_modules/react-native-tracking-transparency`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1897,10 +1984,13 @@ DEPENDENCIES:
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSound (from `../node_modules/react-native-sound`)
   - RNSVG (from `../node_modules/react-native-svg`)
+  - "sparkfabrik-react-native-idfa-aaid (from `../node_modules/@sparkfabrik/react-native-idfa-aaid`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - AppsFlyerFramework
+    - OneSignalXCFramework
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1975,8 +2065,18 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   React-microtasksnativemodule:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
+  react-native-apple-ads-attribution:
+    :path: "../node_modules/@vladikstyle/react-native-apple-ads-attribution"
+  react-native-appsflyer:
+    :path: "../node_modules/react-native-appsflyer"
+  react-native-onesignal:
+    :path: "../node_modules/react-native-onesignal"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-tracking-transparency:
+    :path: "../node_modules/react-native-tracking-transparency"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-nativeconfig:
     :path: "../node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -2047,16 +2147,20 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-sound"
   RNSVG:
     :path: "../node_modules/react-native-svg"
+  sparkfabrik-react-native-idfa-aaid:
+    :path: "../node_modules/@sparkfabrik/react-native-idfa-aaid"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppsFlyerFramework: ad7ff0d22aa36c7f8cc4f71a5424e19b89ccb8ae
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   FBLazyVector: bc70dcb22ad30ce734a7cce7210791dc737e230f
   fmt: 10c6e61f4be25dc963c36bd73fc7b1705fe975be
   glog: 08b301085f15bcbb6ff8632a8ebaf239aae04e6a
   hermes-engine: 3852e37f6158a2fcfad23e31215ed495da3a6a40
+  OneSignalXCFramework: f5b2a3c4f130e4c910ead7bb25bed7455e976fbf
   RCT-Folly: 84578c8756030547307e4572ab1947de1685c599
   RCTDeprecation: d575d28132f93e5deef4849d5afffb4ac4e63226
   RCTRequired: e2e5df1df76aac8685aabfebca389e6bec64792b
@@ -2086,7 +2190,12 @@ SPEC CHECKSUMS:
   React-logger: addd140841248966c2547eb94836399cc1061f4d
   React-Mapbuffer: 029b5332e78af8c67c4b5e65edfc717068b8eac1
   React-microtasksnativemodule: f30949ee318ba90b9668de1e325b98838b9a4da2
-  react-native-safe-area-context: 2985d96d364676d1e2e2d5e77f64860874e31e13
+  react-native-apple-ads-attribution: a545d8779cc262d4ae7c47c0e2bfdd6baa8bda8c
+  react-native-appsflyer: f6929760b13373fd33fd9f3ee6eb7e4d90e9c2c2
+  react-native-onesignal: 1795c532f8bd86c3307a032621c17d85998402d0
+  react-native-safe-area-context: 5e53e2b0fc3a2994ad0c89a2486e545b6566d8c4
+  react-native-tracking-transparency: 15eb319f2b982070eb9831582af27d87badfa624
+  react-native-webview: dd55f7d3b8c0dcdf8835a44ffc5bd03303dffb30
   React-nativeconfig: 470fce6d871c02dc5eff250a362d56391b7f52d6
   React-NativeModulesApple: 1586448c61a7c2bd4040cc03ccde66a72037e77e
   React-perflogger: c8860eaab4fe60d628b27bf0086a372c429fc74f
@@ -2114,15 +2223,16 @@ SPEC CHECKSUMS:
   React-utils: c8c0c746031419a29cfd8c72a394fdeac0684a84
   ReactCodegen: a64e8f3a8bba0ecf88fce06c2874e021d55148f3
   ReactCommon: 7b9403030ff3430ccffed63cd25c8aeab2a3ea7e
-  RNCAsyncStorage: 2edc69cf6db9299363a11477668b7f452f2cb4a6
-  RNDeviceInfo: 801c18d0525e86580900e7b5f562dca0c8c05021
-  RNGestureHandler: e1dcb274c17ca0680a04d7ff357e35e37c384185
+  RNCAsyncStorage: d40800ad5002f992f4ebe404055b744b3274b364
+  RNDeviceInfo: d863506092aef7e7af3a1c350c913d867d795047
+  RNGestureHandler: ec23e4d1de3799e1c878f51ad23183fd4bf072d9
   RNReactNativeHapticFeedback: 8397b76d1ca8d3336545ce8bc8723e3b6cb551eb
-  RNReanimated: d8d0ab232099005d87384858de082ae021e7387c
-  RNScreens: 06e1f09654d2da4ff95dee6621b2b13b033e9c5a
+  RNReanimated: a2692304a6568bc656c04c8ffea812887d37436e
+  RNScreens: 7c77d18e5dc04d1c810eb267d1c6d132ff433c24
   RNSound: 314cc5226453ef4a3314a196c65e8a65e5106a7b
-  RNSVG: 588c85abb474f7ee58dd886ed1fe198cc73772b2
+  RNSVG: c50d29abf38abbf48ebfc50b6258f81099aeabae
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
+  sparkfabrik-react-native-idfa-aaid: a28bdc05864459e52c5398b11b9cab2b6c1ceb4b
   Yoga: 96872ee462cfc43866ad013c8160d4ff6b85709b
 
 PODFILE CHECKSUM: 03b4271055d19fb39dd60b0c254b0bc51e12a944

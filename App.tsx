@@ -1,8 +1,8 @@
 import React from 'react';
-import StackStructure from './StackNavigator';
+import AppManager from './src/AppManager';
 
 function App() {
-  return <StackStructure />;
+  return <AppManager />;
 }
 
 export default App;

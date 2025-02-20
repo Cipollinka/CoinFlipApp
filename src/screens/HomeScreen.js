@@ -479,6 +479,7 @@ const HomeScreen = () => {
       style={{ flex: 1, alignItems: 'center', width: '100%' }}
       resizeMode="cover"
     >
+      <View style={{flex:1, width:'100%', height:'100%', position:'absolute', backgroundColor: 'black', opacity: 0.4}}/>
       <View
         className="bg-[#4a56ba] top-0 w-full py-2 pt-10 items-center" style={{ borderBottomLeftRadius: 25, borderBottomRightRadius: 25, }}
       >
